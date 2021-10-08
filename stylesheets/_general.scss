@@ -1,0 +1,56 @@
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 1.4rem;
+}
+body{
+    font-size: 1rem;
+    line-height: 1.5;
+    font-family: $font-family;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1.5rem;
+}
+a{
+    text-decoration: none;
+}
+.tac{
+    text-align: center;
+}
+.font-0{
+    font-size: 0;
+}
+// Flex
+.flex{
+    display: flex;
+}
+.jsb{
+    justify-content: space-between;
+}
+.jse{
+    justify-content: space-evenly;
+}
+.jcc{
+    justify-content: center;
+}
+.aic{
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid black;
+}
