@@ -15,15 +15,16 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
+        <!-- Header -->
         <header class="header">
             <div class="container">
                 <nav class="nav-links">
                     <ul class="flex jse aic">
-                        <li><button class="btn btn-primary">Home</button></li>
-                        <li><button class="btn btn-primary">About</button></li>
+                        <li><button onclick="window.location.href='#home'" class="btn btn-primary">Home</button></li>
+                        <li><button onclick="window.location.href='#about'" class="btn btn-primary">About</button></li>
                         <li><button class="btn btn-primary">Projects</button></li>
                         <li><button class="btn btn-primary">Blogs</button></li>
-                        <li><button class="btn btn-primary">Contact</button></li>
+                        <li><button onclick="window.location.href='#contact'" class="btn btn-primary">Contact</button></li>
                         <li><button class="btn btn-primary">Résumé</button></li>
                     </ul>
                 </nav>
@@ -31,12 +32,12 @@
         </header>
         <main>
             <!-- Hero Section -->
-            <section class="hero-section font-0">
+            <section id="home" class="hero-section font-0">
                 <video autoplay muted loop class="bg-video" src="media/pp-home-bg.mp4"></video>
                 <div class="overlay flex flex-col jcc aic">                    
                     <h1 class="main-heading english"><span>Anand Seshadri</span></h1>
                     <p class="main-para">Hi there! Welcome to my portfolio!</p>
-                    <button class="btn btn-secondary flex jcc aic fancy"><i class="fas fa-angle-double-down"></i></button>
+                    <a href="#about" class="btn btn-secondary flex jcc aic fancy"><i class="fas fa-angle-double-down"></i></a>
                 </div>
             </section>
             <!-- About Section -->
@@ -52,7 +53,7 @@
                 </div>
             </section>
             <!-- Contact Section -->
-            <section class="contact-section section-padding">
+            <section id="contact" class="contact-section section-padding">
                 <div class="container">
                     <h4 class="contact-heading">Reach out to me</h4>
                     <div class="large-container">
