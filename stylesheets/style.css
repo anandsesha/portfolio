@@ -92,8 +92,16 @@ a {
   text-align: center;
 }
 
+.tal {
+  text-align: left;
+}
+
 .font-0 {
   font-size: 0;
+}
+
+.section-padding {
+  padding: 2rem 0;
 }
 
 .flex {
@@ -120,6 +128,12 @@ a {
           justify-content: center;
 }
 
+.jcs {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
 .aic {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -133,14 +147,36 @@ a {
           flex-direction: column;
 }
 
+.flex-25 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 25%;
+          flex: 0 1 25%;
+}
+
+.flex-80 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 80%;
+          flex: 0 1 80%;
+}
+
+.flex-49 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 49%;
+          flex: 0 1 49%;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  border: 1px solid black;
 }
 
 .header {
   background-color: #0e0e0e;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .nav-links {
@@ -189,7 +225,7 @@ a {
   color: #369777;
 }
 
-.btn-secondary:hover, .btn-secondary:focus {
+.btn-secondary:hover, .btn-secondary:focus, .btn-tertiary:hover, .btn-tertiary:focus {
   -webkit-animation: pulse 1s infinite;
           animation: pulse 1s infinite;
   color: yellowgreen;
@@ -298,9 +334,13 @@ a {
 
 .about-para {
   font-size: 1.2rem;
+  font-family: "Roboto Condensed", sans-serif;
   padding: 2rem;
-  word-spacing: 0.1rem;
   font-weight: 100;
+}
+
+.slide-up-animation {
+  display: block;
 }
 
 .fade-in-element {
@@ -338,5 +378,139 @@ a {
 
 .contact-section {
   height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../media/contact-background-img.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../media/contact-background-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #0e0e0e;
+}
+
+.large-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.item {
+  height: 10vh;
+  border: 3px solid #acaaaa1e;
+  color: white;
+  text-align: center;
+}
+
+.item1, .item2, .item3, .item4 {
+  grid-column: span 3;
+  background-color: #81818114;
+}
+
+.contact-heading {
+  color: #eff7ff;
+  padding: 4rem 0 2rem 1rem;
+}
+
+.contact-contents {
+  font-family: "Roboto Condensed", sans-serif;
+  padding: 14px 0 0 10px;
+}
+
+.contact-contents h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #898989;
+}
+
+.contact-contents p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #eff7ff;
+}
+
+.contact-icons a {
+  color: #59d36f;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid #898989;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #81818114;
+}
+
+.social-links li a {
+  color: #eff7ff;
+  margin-right: 0.6rem;
+}
+
+.social-links li a:hover {
+  color: #59d36f;
+}
+
+form {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #81818114;
+  border: 3px solid #acaaaa1e;
+}
+
+label {
+  color: #eff7ff;
+  display: block;
+  padding-top: 0.6rem;
+}
+
+input[type=text], input[type=email], select, textarea {
+  width: 100%;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.6rem;
+  display: inline-block;
+  border: 1px solid #898989;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 0.8rem;
+  background-color: transparent;
+}
+
+input[id=subject] {
+  display: block;
+  width: 49%;
+}
+
+input[id=subject]:focus {
+  width: 100%;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=submit] {
+  background-color: #146248;
+  color: #eff7ff;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer {
+  padding: 1rem 0;
+  background-color: #0e0e0e;
+}
+
+.footer small {
+  color: #898989;
 }
 /*# sourceMappingURL=style.css.map */

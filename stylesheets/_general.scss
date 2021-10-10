@@ -27,8 +27,14 @@ a{
 .tac{
     text-align: center;
 }
+.tal{
+    text-align: left;
+}
 .font-0{
     font-size: 0;
+}
+.section-padding{
+    padding: 2rem 0;
 }
 // Flex
 .flex{
@@ -43,14 +49,29 @@ a{
 .jcc{
     justify-content: center;
 }
+.jcs{
+    justify-content: start;
+}
 .aic{
     align-items: center;
 }
 .flex-col{
     flex-direction: column;
 }
+.flex-25{
+    flex: 0 1 25%;
+    // border: 1px solid gold;
+}
+.flex-80{
+    flex: 0 1 80%;
+    // border: 1px solid gold;
+}
+.flex-49{
+    flex: 0 1 49%;
+    // border: 1px solid gold;
+}
 .container{
     max-width: 1200px;
     margin: 0 auto;
-    border: 1px solid black;
+    // border: 1px solid white;
 }

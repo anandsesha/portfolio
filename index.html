@@ -11,7 +11,8 @@
         <!-- Font-Family -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600&display=swap" rel="stylesheet">    
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <header class="header">
@@ -41,8 +42,8 @@
             <!-- About Section -->
             <section id="about" class="about-section">
                 <div class="container flex flex-col jcc aic tac">
-                    <h3 class="about-heading fade-in-element">ABOUT ME</h3>
-                    <p class="about-para fade-in-element">
+                    <h3 class="about-heading slide-up-animation fade-in-element">ABOUT ME</h3>
+                    <p class="about-para slide-up-animation fade-in-element">
                         Hi! I'm Anand, Computer Science Engineer who passed out in the year 2017. Since then I've worked
                         as a QA Test Engineer in a company called NMSWorks Pvt. Ltd. based in Chennai for a period of two
                         and a half years. While working here is when I came acorss a bootcamp called AltCampus where I enrolled
@@ -51,16 +52,88 @@
                 </div>
             </section>
             <!-- Contact Section -->
-            <section class="contact-section">
-                <video autoplay muted loop class="bg-video" src="media/pp-home-bg.mp4"></video>
-                <div class="overlay"></div>
-
+            <section class="contact-section section-padding">
                 <div class="container">
-                    
+                    <h4 class="contact-heading">Reach out to me</h4>
+                    <div class="large-container">
+                    <div class="item item1 flex jsb">
+                        <div class="contact-icons flex-25 flex jcc aic">
+                            <a href=""><i class="fas fa-map-marker-alt"></i></a>
+                        </div>
+                        <div class="contact-contents flex-80 tal">
+                            <h5>Location</h5>
+                            <p>Dharamshala, India</p>
+                        </div>
+                    </div>
+                    <div class="item item2 flex jsb">
+                        <div class="contact-icons flex-25 flex jcc aic">
+                            <a href=""><i class="fas fa-share-alt"></i></a>
+                        </div>
+                        <div class="contact-contents flex-80 tal">
+                            <h5>Social Profile</h5>
+                            <div class="social-links">
+                                <ul class="flex">
+                                    <li>
+                                        <a href=""><i class="fab fa-twitter"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li>
+                                        <a href=""><i class="fab fa-github"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item item3 flex jsb">
+                        <div class="contact-icons flex-25 flex jcc aic">
+                            <a href=""><i class="far fa-envelope"></i></a>
+                        </div>
+                        <div class="contact-contents flex-80 tal">
+                            <h5>Email</h5>
+                            <p>anandseshawork@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="item item4 flex jsb">
+                        <div class="contact-icons flex-25 flex jcc aic">
+                            <a href=""><i class="fas fa-phone-alt"></i></a>
+                        </div>
+                        <div class="contact-contents flex-80 tal">
+                            <h5>Call Me</h5>
+                            <p>+91 8329553307</p>
+                        </div>
+                    </div>
+                    </div>
+
+                    <form action="">
+                        <div class="flex jsb aic">
+                            <div class="flex-49">
+                                <label for="name">First Name</label>
+                                <input type="text" id="name" placeholder="Please enter your name">    
+                            </div>
+                            <div class="flex-49">
+                                <label for="email">Last Name</label>
+                                <input type="email" id="email" placeholder="Please enter your email ID">    
+                            </div>
+                        </div>
+                        
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" placeholder="Please enter a subject">
+                        
+                        <label for="message">Message</label>
+                        <textarea id="message" name="subject" placeholder="Please write your message here" rows="4" cols="50"></textarea>
+                        
+                        <div class="flex jcc aic">
+                            <input type="submit" value="Submit" class="btn-tertiary black">
+                        </div>
+                      </form>
                 </div>
             </section>
         </main>
-        <footer>
+        <!-- Footer -->
+        <footer class="footer tac">
+            <small>© Anand Seshadri, AltCampus Servcices Dharamshala, India</small>
         </footer>
     </body>
 </html>
