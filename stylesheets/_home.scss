@@ -173,9 +173,10 @@ button{
 }
 .item{
     height: 10vh;
-    border: 3px solid #acaaaa1e;
+    // border: 3px solid #acaaaa1e;
     color: white;
     text-align: center;
+    border: 1px solid black;
 }
 .item1,.item2,.item3,.item4{
     grid-column: span 3;
@@ -257,6 +258,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    font-size: 0.8rem;
 }
 
 // Footer
