@@ -42,7 +42,7 @@
         border: 1px solid $dark-green;
         color: $quaternary;
     }
-    &-secondary:hover,&-secondary:focus,&-tertiary:hover,&-tertiary:focus{
+    &-secondary:hover,&-tertiary:hover{
         animation: pulse 1s infinite;
         color: yellowgreen;
         box-shadow: 0 0 0 2em rgba(#fff,0);
@@ -50,10 +50,12 @@
 }
 @keyframes pulse {
     0% { 
-        box-shadow: 0 0 0 0 $quaternary;
+        box-shadow: 0 0 0 $quaternary;
     }
 }
-
+button{
+    transition-delay: 1s;
+}
 // Hero Section
 .hero-section{
     position: relative;
@@ -101,25 +103,23 @@
 // About Section
 .about-section{
     height: 100vh;
-    background-color: $primary;
+    background-color: rgb(14, 13, 13);
     color: $secondary;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .about-heading{
-    font-size: 2rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-left: 1rem;
 }
 .about-para{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-family: $font-family-secondary;
-    padding: 2rem;
+    padding-left: 1rem;
     // word-spacing: 0.1rem;
     font-weight: 100;
-}
-.slide-up-animation {
-    display: block;
 }
 .fade-in-element {
     animation: fade-in 1.4s;
@@ -135,10 +135,25 @@
         transform: translateY(-100px);
     }
 }
+.about-wrapper{
+    width: 100%;
+}
+.about-contents{
+    font-family: $font-family-secondary;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    padding: 1rem;
+    background-color: $contact-background;
+    box-shadow: 0px 1px 3px rgba($color: $gray, $alpha: 0.6);
+}
+.timeline{
+    display: flex;
+    justify-content: start;
+}
 // Contact Section
 .contact-section{    
     height: 100vh;
-    background-image: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ),url(../media/contact-background-img.jpg);
+    background-image: linear-gradient( rgba(0, 0, 0, 0.9), rgba(12, 12, 12, 0.664) ),url(../media/contact-background-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -166,20 +181,20 @@
     grid-column: span 3;
     background-color: $contact-background;
 }
-.contact-heading{
+.contact-heading,.about-heading{
     color: $secondary;
-    padding: 4rem 0 2rem 1rem;
+    padding: 4rem 0 1.4rem 1rem;
 }
 .contact-contents{
     font-family: $font-family-secondary;
     padding: 14px 0 0 10px;
 }
-.contact-contents h5{
+.contact-contents h5,.about-contents h5{
     font-size: 1.2rem;
     font-weight: 600;
     color: $gray;
 }
-.contact-contents p{
+.contact-contents p,.about-contents p{
     font-size: 0.8rem;
     font-weight: 400;
     color: $secondary;
