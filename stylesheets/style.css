@@ -458,9 +458,9 @@ button {
 
 .item {
   height: 10vh;
+  border: 2px solid #acaaaa1e;
   color: white;
   text-align: center;
-  border: 1px solid black;
 }
 
 .item1, .item2, .item3, .item4 {
