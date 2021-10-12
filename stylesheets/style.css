@@ -573,6 +573,66 @@ input[type=submit] {
   color: #898989;
 }
 
+@media screen and (max-width: 800px) {
+  .container {
+    max-width: 760px;
+  }
+  html {
+    font-size: 1rem;
+  }
+  .flex-wrap-mob {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .flex-100 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+  .nav-links li a {
+    margin-top: 1rem;
+  }
+  .about-section {
+    height: 130vh;
+  }
+  .about-heading, .about-para, .contact-heading {
+    text-align: center;
+    margin: auto 5rem;
+  }
+  .about-heading {
+    margin-top: 2rem;
+  }
+  .about-contents {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    text-align: center;
+    margin: 1rem 2rem;
+  }
+  .timeline {
+    display: block;
+  }
+  .contact-section {
+    height: 130vh;
+  }
+  .form {
+    margin: 1rem 2rem;
+  }
+  .item {
+    grid-column: 1 / -1;
+    margin: 0 2rem;
+  }
+  label {
+    text-align: center;
+  }
+  input[id=subject] {
+    width: 100%;
+  }
+  .form-elements {
+    text-align: center;
+  }
+}
+
 .projects-section {
   height: 100vh;
   padding: 1rem 0;

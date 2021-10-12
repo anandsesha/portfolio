@@ -268,3 +268,61 @@ input[type=submit] {
         color: $gray;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .container {
+        max-width: 760px;
+    }
+    html{
+        font-size: 1rem;
+    }
+    .flex-wrap-mob{
+        flex-wrap: wrap;
+    }
+    .flex-100{
+        flex: 0 1 100%;
+    }
+    .nav-links li a{
+        margin-top: 1rem;
+    }
+    // About Section
+    .about-section{
+        height: 130vh;
+    }
+    .about-heading,.about-para,.contact-heading{
+        text-align: center;
+        margin: auto 5rem;
+    }
+    .about-heading{
+        margin-top: 2rem;
+    }
+    .about-contents{
+        flex: 0 1 100%;
+        text-align: center;
+        margin: 1rem 2rem;
+    }
+    .timeline{
+        display: block;
+    }
+    // Contact Section
+    .contact-section{
+        height: 130vh;
+    }
+    .form{
+        margin: 1rem 2rem;
+    }
+    .item{
+        grid-column: 1 / -1;
+        margin: 0 2rem;
+    }
+    label{
+        text-align: center;
+    }
+    input[id=subject]{
+        width: 100%;
+    }
+    .form-elements{
+        text-align: center;
+    }
+
+}
